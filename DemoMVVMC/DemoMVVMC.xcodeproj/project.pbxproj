@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,21 @@
 		2ED9D5BF2525AAF300619881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ED9D5BD2525AAF300619881 /* LaunchScreen.storyboard */; };
 		2ED9D5CA2525AAF400619881 /* DemoMVVMCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5C92525AAF400619881 /* DemoMVVMCTests.swift */; };
 		2ED9D5D52525AAF400619881 /* DemoMVVMCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5D42525AAF400619881 /* DemoMVVMCUITests.swift */; };
+		2ED9D5E72525AB4D00619881 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2ED9D5E62525AB4D00619881 /* RxSwift */; };
+		2ED9D5E92525AB4D00619881 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 2ED9D5E82525AB4D00619881 /* RxCocoa */; };
+		2ED9D6002525AB6100619881 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5EE2525AB6100619881 /* Storyboard.swift */; };
+		2ED9D6012525AB6100619881 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5F12525AB6100619881 /* AppCoordinator.swift */; };
+		2ED9D6022525AB6100619881 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5F32525AB6100619881 /* FirstViewController.swift */; };
+		2ED9D6032525AB6100619881 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5F42525AB6100619881 /* FirstViewModel.swift */; };
+		2ED9D6042525AB6100619881 /* FirstUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5F52525AB6100619881 /* FirstUseCase.swift */; };
+		2ED9D6052525AB6100619881 /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5F62525AB6100619881 /* FirstCoordinator.swift */; };
+		2ED9D6062525AB6100619881 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5F82525AB6100619881 /* SecondViewModel.swift */; };
+		2ED9D6072525AB6100619881 /* SecondUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5F92525AB6100619881 /* SecondUseCase.swift */; };
+		2ED9D6082525AB6100619881 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FA2525AB6100619881 /* SecondViewController.swift */; };
+		2ED9D6092525AB6100619881 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FB2525AB6100619881 /* SecondCoordinator.swift */; };
+		2ED9D60A2525AB6100619881 /* CoordinateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FD2525AB6100619881 /* CoordinateType.swift */; };
+		2ED9D60B2525AB6100619881 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FE2525AB6100619881 /* ViewModelType.swift */; };
+		2ED9D60C2525AB6100619881 /* ViewBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FF2525AB6100619881 /* ViewBindableType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +64,19 @@
 		2ED9D5D02525AAF400619881 /* DemoMVVMCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoMVVMCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED9D5D42525AAF400619881 /* DemoMVVMCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMVVMCUITests.swift; sourceTree = "<group>"; };
 		2ED9D5D62525AAF400619881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ED9D5EE2525AB6100619881 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		2ED9D5F12525AB6100619881 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		2ED9D5F32525AB6100619881 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		2ED9D5F42525AB6100619881 /* FirstViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
+		2ED9D5F52525AB6100619881 /* FirstUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstUseCase.swift; sourceTree = "<group>"; };
+		2ED9D5F62525AB6100619881 /* FirstCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
+		2ED9D5F82525AB6100619881 /* SecondViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		2ED9D5F92525AB6100619881 /* SecondUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondUseCase.swift; sourceTree = "<group>"; };
+		2ED9D5FA2525AB6100619881 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2ED9D5FB2525AB6100619881 /* SecondCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
+		2ED9D5FD2525AB6100619881 /* CoordinateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateType.swift; sourceTree = "<group>"; };
+		2ED9D5FE2525AB6100619881 /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		2ED9D5FF2525AB6100619881 /* ViewBindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBindableType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED9D5E92525AB4D00619881 /* RxCocoa in Frameworks */,
+				2ED9D5E72525AB4D00619881 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +129,9 @@
 		2ED9D5B12525AAF100619881 /* DemoMVVMC */ = {
 			isa = PBXGroup;
 			children = (
+				2ED9D5ED2525AB6100619881 /* Common */,
+				2ED9D5EF2525AB6100619881 /* Modules */,
+				2ED9D5FC2525AB6100619881 /* Protocol */,
 				2ED9D5B22525AAF100619881 /* AppDelegate.swift */,
 				2ED9D5B42525AAF100619881 /* SceneDelegate.swift */,
 				2ED9D5B62525AAF100619881 /* ViewController.swift */,
@@ -128,6 +161,64 @@
 			path = DemoMVVMCUITests;
 			sourceTree = "<group>";
 		};
+		2ED9D5ED2525AB6100619881 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2ED9D5EE2525AB6100619881 /* Storyboard.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2ED9D5EF2525AB6100619881 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2ED9D5F02525AB6100619881 /* App */,
+				2ED9D5F22525AB6100619881 /* First */,
+				2ED9D5F72525AB6100619881 /* Second */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2ED9D5F02525AB6100619881 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2ED9D5F12525AB6100619881 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2ED9D5F22525AB6100619881 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				2ED9D5F32525AB6100619881 /* FirstViewController.swift */,
+				2ED9D5F42525AB6100619881 /* FirstViewModel.swift */,
+				2ED9D5F52525AB6100619881 /* FirstUseCase.swift */,
+				2ED9D5F62525AB6100619881 /* FirstCoordinator.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		2ED9D5F72525AB6100619881 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				2ED9D5F82525AB6100619881 /* SecondViewModel.swift */,
+				2ED9D5F92525AB6100619881 /* SecondUseCase.swift */,
+				2ED9D5FA2525AB6100619881 /* SecondViewController.swift */,
+				2ED9D5FB2525AB6100619881 /* SecondCoordinator.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		2ED9D5FC2525AB6100619881 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2ED9D5FD2525AB6100619881 /* CoordinateType.swift */,
+				2ED9D5FE2525AB6100619881 /* ViewModelType.swift */,
+				2ED9D5FF2525AB6100619881 /* ViewBindableType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +235,10 @@
 			dependencies = (
 			);
 			name = DemoMVVMC;
+			packageProductDependencies = (
+				2ED9D5E62525AB4D00619881 /* RxSwift */,
+				2ED9D5E82525AB4D00619881 /* RxCocoa */,
+			);
 			productName = DemoMVVMC;
 			productReference = 2ED9D5AF2525AAF100619881 /* DemoMVVMC.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +310,9 @@
 				Base,
 			);
 			mainGroup = 2ED9D5A62525AAF100619881;
+			packageReferences = (
+				2ED9D5E52525AB4D00619881 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 2ED9D5B02525AAF100619881 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +356,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED9D6082525AB6100619881 /* SecondViewController.swift in Sources */,
+				2ED9D6002525AB6100619881 /* Storyboard.swift in Sources */,
+				2ED9D6092525AB6100619881 /* SecondCoordinator.swift in Sources */,
 				2ED9D5B72525AAF100619881 /* ViewController.swift in Sources */,
+				2ED9D6072525AB6100619881 /* SecondUseCase.swift in Sources */,
+				2ED9D6012525AB6100619881 /* AppCoordinator.swift in Sources */,
+				2ED9D6022525AB6100619881 /* FirstViewController.swift in Sources */,
+				2ED9D6052525AB6100619881 /* FirstCoordinator.swift in Sources */,
+				2ED9D60B2525AB6100619881 /* ViewModelType.swift in Sources */,
+				2ED9D6032525AB6100619881 /* FirstViewModel.swift in Sources */,
 				2ED9D5B32525AAF100619881 /* AppDelegate.swift in Sources */,
+				2ED9D6042525AB6100619881 /* FirstUseCase.swift in Sources */,
+				2ED9D6062525AB6100619881 /* SecondViewModel.swift in Sources */,
 				2ED9D5B52525AAF100619881 /* SceneDelegate.swift in Sources */,
+				2ED9D60A2525AB6100619881 /* CoordinateType.swift in Sources */,
+				2ED9D60C2525AB6100619881 /* ViewBindableType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoMVVMCUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -532,6 +644,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoMVVMCUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -587,6 +700,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2ED9D5E52525AB4D00619881 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2ED9D5E62525AB4D00619881 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2ED9D5E52525AB4D00619881 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		2ED9D5E82525AB4D00619881 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2ED9D5E52525AB4D00619881 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2ED9D5A72525AAF100619881 /* Project object */;
 }
