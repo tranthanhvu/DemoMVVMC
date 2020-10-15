@@ -14,7 +14,7 @@ struct SecondViewModel {
     let useCase: SecondUseCaseType
 }
 
-extension SecondViewModel: ViewModelType {
+extension SecondViewModel: ViewModelProtocol {
     struct Input {
         let closeTrigger: Driver<Void>
     }

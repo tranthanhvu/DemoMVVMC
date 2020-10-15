@@ -1,5 +1,5 @@
 //
-//  ViewModelType.swift
+//  ViewModelProtocol.swift
 //  GooDic
 //
 //  Created by ttvu on 9/30/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ViewModelType {
+protocol ViewModelProtocol {
     associatedtype Input
     associatedtype Output
     

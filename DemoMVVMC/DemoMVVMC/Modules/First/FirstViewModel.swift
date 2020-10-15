@@ -14,7 +14,7 @@ struct FirstViewModel {
     let useCase: FirstUseCaseType
 }
 
-extension FirstViewModel: ViewModelType {
+extension FirstViewModel: ViewModelProtocol {
     struct Input {
         let pushTrigger: Driver<Void>
     }

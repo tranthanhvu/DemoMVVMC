@@ -11,14 +11,14 @@ protocol FirstNavigateType {
     func toSecondView()
 }
 
-class FirstCoordinator: CoordinateType {
-    var parentCoord: CoordinateType?
+class FirstCoordinator: CoordinateProtocol {
+    var parentCoord: CoordinateProtocol?
     
     weak var viewController: UIViewController! = {
         FirstViewController.instantiate(storyboard: .main)
     }()
     
-    init(parentCoord: CoordinateType) {
+    init(parentCoord: CoordinateProtocol) {
         self.parentCoord = parentCoord
     }
     

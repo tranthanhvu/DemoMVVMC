@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class FirstViewController: UIViewController, ViewBindableType {
+class FirstViewController: UIViewController, ViewBindableProtocol {
     
     @IBOutlet weak var actionButton: UIButton!
     

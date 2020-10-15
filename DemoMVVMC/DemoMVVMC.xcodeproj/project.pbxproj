@@ -27,9 +27,9 @@
 		2ED9D6072525AB6100619881 /* SecondUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5F92525AB6100619881 /* SecondUseCase.swift */; };
 		2ED9D6082525AB6100619881 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FA2525AB6100619881 /* SecondViewController.swift */; };
 		2ED9D6092525AB6100619881 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FB2525AB6100619881 /* SecondCoordinator.swift */; };
-		2ED9D60A2525AB6100619881 /* CoordinateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FD2525AB6100619881 /* CoordinateType.swift */; };
-		2ED9D60B2525AB6100619881 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FE2525AB6100619881 /* ViewModelType.swift */; };
-		2ED9D60C2525AB6100619881 /* ViewBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FF2525AB6100619881 /* ViewBindableType.swift */; };
+		2ED9D60A2525AB6100619881 /* CoordinateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FD2525AB6100619881 /* CoordinateProtocol.swift */; };
+		2ED9D60B2525AB6100619881 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FE2525AB6100619881 /* ViewModelProtocol.swift */; };
+		2ED9D60C2525AB6100619881 /* ViewBindableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FF2525AB6100619881 /* ViewBindableProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,9 +74,9 @@
 		2ED9D5F92525AB6100619881 /* SecondUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondUseCase.swift; sourceTree = "<group>"; };
 		2ED9D5FA2525AB6100619881 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2ED9D5FB2525AB6100619881 /* SecondCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
-		2ED9D5FD2525AB6100619881 /* CoordinateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateType.swift; sourceTree = "<group>"; };
-		2ED9D5FE2525AB6100619881 /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
-		2ED9D5FF2525AB6100619881 /* ViewBindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBindableType.swift; sourceTree = "<group>"; };
+		2ED9D5FD2525AB6100619881 /* CoordinateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateProtocol.swift; sourceTree = "<group>"; };
+		2ED9D5FE2525AB6100619881 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		2ED9D5FF2525AB6100619881 /* ViewBindableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBindableProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,9 +212,9 @@
 		2ED9D5FC2525AB6100619881 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				2ED9D5FD2525AB6100619881 /* CoordinateType.swift */,
-				2ED9D5FE2525AB6100619881 /* ViewModelType.swift */,
-				2ED9D5FF2525AB6100619881 /* ViewBindableType.swift */,
+				2ED9D5FD2525AB6100619881 /* CoordinateProtocol.swift */,
+				2ED9D5FE2525AB6100619881 /* ViewModelProtocol.swift */,
+				2ED9D5FF2525AB6100619881 /* ViewBindableProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -364,14 +364,14 @@
 				2ED9D6012525AB6100619881 /* AppCoordinator.swift in Sources */,
 				2ED9D6022525AB6100619881 /* FirstViewController.swift in Sources */,
 				2ED9D6052525AB6100619881 /* FirstCoordinator.swift in Sources */,
-				2ED9D60B2525AB6100619881 /* ViewModelType.swift in Sources */,
+				2ED9D60B2525AB6100619881 /* ViewModelProtocol.swift in Sources */,
 				2ED9D6032525AB6100619881 /* FirstViewModel.swift in Sources */,
 				2ED9D5B32525AAF100619881 /* AppDelegate.swift in Sources */,
 				2ED9D6042525AB6100619881 /* FirstUseCase.swift in Sources */,
 				2ED9D6062525AB6100619881 /* SecondViewModel.swift in Sources */,
 				2ED9D5B52525AAF100619881 /* SceneDelegate.swift in Sources */,
-				2ED9D60A2525AB6100619881 /* CoordinateType.swift in Sources */,
-				2ED9D60C2525AB6100619881 /* ViewBindableType.swift in Sources */,
+				2ED9D60A2525AB6100619881 /* CoordinateProtocol.swift in Sources */,
+				2ED9D60C2525AB6100619881 /* ViewBindableProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

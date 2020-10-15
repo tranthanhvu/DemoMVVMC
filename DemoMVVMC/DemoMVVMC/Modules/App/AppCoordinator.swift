@@ -7,8 +7,8 @@
 
 import UIKit
 
-class AppCoordinator: CoordinateType {
-    var parentCoord: CoordinateType?
+class AppCoordinator: CoordinateProtocol {
+    var parentCoord: CoordinateProtocol?
     
     lazy var viewController: UIViewController! = {
         UINavigationController()

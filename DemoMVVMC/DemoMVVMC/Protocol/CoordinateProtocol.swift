@@ -1,5 +1,5 @@
 //
-//  CoordinateType.swift
+//  CoordinateProtocol.swift
 //  GooDic
 //
 //  Created by ttvu on 9/30/20.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol CoordinateType {
-    var parentCoord: CoordinateType? { get set }
+protocol CoordinateProtocol {
+    var parentCoord: CoordinateProtocol? { get set }
     var viewController: UIViewController! { get }
     
     func start() // setup dependencies: view, viewModel, useCase, navigator
 }
 
-extension CoordinateType {
+extension CoordinateProtocol {
     func push(animated: Bool = true) {
         parentCoord?.viewController.navigationController?.pushViewController(viewController, animated: true)
     }
