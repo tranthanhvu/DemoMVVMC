@@ -10,6 +10,8 @@ import UIKit
 
 protocol CoordinateProtocol {
     var parentCoord: CoordinateProtocol? { get set }
+    
+    // NOTE: always use weak instance to avoid a retain cycle
     var viewController: UIViewController! { get }
     
     @discardableResult
