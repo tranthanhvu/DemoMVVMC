@@ -22,17 +22,20 @@ class SecondCoordinator: CoordinateProtocol {
         self.parentCoord = parentCoord
     }
     
-    func start() {
-        guard let vc = viewController as? SecondViewController else { return }
+    @discardableResult
+    func prepare() -> CoordinateProtocol {
+        guard let vc = viewController as? SecondViewController else { return self }
         
         let useCase = SecondUseCase()
         let viewModel = SecondViewModel(navigator: self, useCase: useCase)
         vc.bindViewModel(viewModel)
+        
+        return self
     }
 }
 
 extension SecondCoordinator: SecondNavigateType {
     func pop() {
-        viewController.navigationController?.popViewController(animated: true)
+        pop(animated: true)
     }
 }

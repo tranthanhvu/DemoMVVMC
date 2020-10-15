@@ -12,15 +12,34 @@ protocol CoordinateProtocol {
     var parentCoord: CoordinateProtocol? { get set }
     var viewController: UIViewController! { get }
     
-    func start() // setup dependencies: view, viewModel, useCase, navigator
+    @discardableResult
+    func prepare() -> CoordinateProtocol // setup dependencies: view, viewModel, useCase, navigator
 }
 
 extension CoordinateProtocol {
+    typealias Completion = (()->Void)
+    
+    func prepare() -> CoordinateProtocol {
+        return self
+    }
+    
+    func start() {
+        UIWindow.key?.rootViewController = viewController
+    }
+    
     func push(animated: Bool = true) {
         parentCoord?.viewController.navigationController?.pushViewController(viewController, animated: true)
     }
     
-    func present(animated: Bool = true, completion: (()->Void)? = nil) {
+    func pop(animated: Bool = true) {
+        viewController.navigationController?.popViewController(animated: animated)
+    }
+    
+    func present(animated: Bool = true, completion: Completion? = nil) {
         parentCoord?.viewController.present(viewController, animated: animated, completion: completion)
+    }
+    
+    func dismiss(animated: Bool = true, completion: Completion? = nil) {
+        viewController.dismiss(animated: animated, completion: completion)
     }
 }

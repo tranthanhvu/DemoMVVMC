@@ -30,6 +30,7 @@
 		2ED9D60A2525AB6100619881 /* CoordinateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FD2525AB6100619881 /* CoordinateProtocol.swift */; };
 		2ED9D60B2525AB6100619881 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FE2525AB6100619881 /* ViewModelProtocol.swift */; };
 		2ED9D60C2525AB6100619881 /* ViewBindableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED9D5FF2525AB6100619881 /* ViewBindableProtocol.swift */; };
+		BEC797062538CD1C000C4E93 /* UIWindow+Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC797052538CD1C000C4E93 /* UIWindow+Key.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		2ED9D5FD2525AB6100619881 /* CoordinateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateProtocol.swift; sourceTree = "<group>"; };
 		2ED9D5FE2525AB6100619881 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		2ED9D5FF2525AB6100619881 /* ViewBindableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBindableProtocol.swift; sourceTree = "<group>"; };
+		BEC797052538CD1C000C4E93 /* UIWindow+Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Key.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		2ED9D5B12525AAF100619881 /* DemoMVVMC */ = {
 			isa = PBXGroup;
 			children = (
+				BEC797042538CCCE000C4E93 /* Extensions */,
 				2ED9D5ED2525AB6100619881 /* Common */,
 				2ED9D5EF2525AB6100619881 /* Modules */,
 				2ED9D5FC2525AB6100619881 /* Protocol */,
@@ -217,6 +220,14 @@
 				2ED9D5FF2525AB6100619881 /* ViewBindableProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BEC797042538CCCE000C4E93 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEC797052538CD1C000C4E93 /* UIWindow+Key.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +374,7 @@
 				2ED9D6072525AB6100619881 /* SecondUseCase.swift in Sources */,
 				2ED9D6012525AB6100619881 /* AppCoordinator.swift in Sources */,
 				2ED9D6022525AB6100619881 /* FirstViewController.swift in Sources */,
+				BEC797062538CD1C000C4E93 /* UIWindow+Key.swift in Sources */,
 				2ED9D6052525AB6100619881 /* FirstCoordinator.swift in Sources */,
 				2ED9D60B2525AB6100619881 /* ViewModelProtocol.swift in Sources */,
 				2ED9D6032525AB6100619881 /* FirstViewModel.swift in Sources */,

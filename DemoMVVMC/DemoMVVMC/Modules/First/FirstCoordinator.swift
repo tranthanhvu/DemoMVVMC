@@ -22,21 +22,22 @@ class FirstCoordinator: CoordinateProtocol {
         self.parentCoord = parentCoord
     }
     
-    func start() {
-        guard let vc = viewController as? FirstViewController else { return }
+    @discardableResult
+    func prepare() -> CoordinateProtocol {
+        guard let vc = viewController as? FirstViewController else { return self }
         
         let useCase = FirstUseCase()
         let viewModel = FirstViewModel(navigator: self, useCase: useCase)
         vc.bindViewModel(viewModel)
+        
+        return self
     }
 }
 
 extension FirstCoordinator: FirstNavigateType {
     func toSecondView() {
-        let coord = SecondCoordinator(parentCoord: self)
-        coord.start()
-        coord.push()
-        
-        
+        SecondCoordinator(parentCoord: self)
+            .prepare()
+            .push()
     }
 }

@@ -24,7 +24,7 @@ class AppCoordinator: CoordinateProtocol {
         guard let nc = viewController as? UINavigationController else { return }
         
         let firstCoord = FirstCoordinator(parentCoord: self)
-        firstCoord.start()
+        firstCoord.prepare()
         
         nc.setViewControllers([firstCoord.viewController], animated: false)
         window.rootViewController = nc
